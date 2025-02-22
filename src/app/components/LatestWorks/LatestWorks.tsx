@@ -12,11 +12,13 @@ import React, { useEffect, useState } from "react";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useSwiperHandler } from "../../lib/hooks/useSwiperHandler";
+import { fadeIn } from "@/app/lib/animation/variants";
+import { motion } from "framer-motion";
 
 const LatestWorks = () => {
   useEffect(() => {
     AOS.init({
-      once: true
+      once: true,
     });
   }, []);
 
@@ -101,7 +103,7 @@ const LatestWorks = () => {
                 )}
                 disabled={currentIndex >= maxScroll}
                 style={{
-                  opacity: currentIndex >= maxScroll ? 0.3 : 1
+                  opacity: currentIndex >= maxScroll ? 0.3 : 1,
                 }}
               >
                 <ArrowRight />
@@ -123,16 +125,22 @@ const LatestWorks = () => {
                 allowTouchMove={false}
                 breakpoints={{
                   768: {
-                    slidesPerView: 2
+                    slidesPerView: 2,
                   },
                   0: {
-                    slidesPerView: 1
-                  }
+                    slidesPerView: 1,
+                  },
                 }}
               >
                 {works.map((work, index) => (
                   <SwiperSlide className="" key={index}>
-                    <div className="latest-set">
+                    <motion.div
+                      variants={fadeIn("up", 0.2)}
+                      initial="hidden"
+                      whileInView="show"
+                      viewport={{ once: false, amount: 0.4 }}
+                      className="latest-set"
+                    >
                       <div className="thumbnail-media sm:!w-full">
                         <img
                           className="!w-full"
@@ -166,7 +174,7 @@ const LatestWorks = () => {
                           </button>
                         )}
                       </div>
-                    </div>
+                    </motion.div>
                   </SwiperSlide>
                 ))}
               </Swiper>
