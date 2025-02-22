@@ -1,0 +1,71 @@
+[
+  {
+    "id": 3,
+    "title": "uDesign",
+    "list": [
+      "Responsive Interface",
+      "Logo Design",
+      "Branding",
+      "Online Gallery",
+      "Blog"
+    ],
+    "description1": "This project combines innovative graphic design and web development techniques to deliver a stunning result.",
+    "myGoal": "My goal was to completely rebuild a well-known website for designers.",
+    "description2": "Working with one of the biggest web technologies enterprises resulted in a fruitful cooperation. As a result, my project provided better user experience and simpler interaction with many vital website elements & pages.",
+    "slides": [
+      {
+        "img": "images/image-12-651x773.jpg",
+        "tags": [
+          { "title": "Design", "link": "#" },
+          { "title": "Branding", "link": "#" }
+        ]
+      },
+      {
+        "img": "images/image-04-651x773.jpg",
+        "tags": [
+          { "title": "Design", "link": "#" },
+          { "title": "Branding", "link": "#" },
+          { "title": "Logo", "link": "#" }
+        ]
+      }
+    ],
+    "clientLogo": {
+      "img": "images/logo-02-187x30.png"
+    }
+  },
+
+  {
+    "id": 1,
+    "title": "Donut Country",
+    "list": [
+      "Responsive Interface",
+      "Branding",
+      "Responsive Interface",
+      "Logo Design"
+    ],
+    "description1": "This project combines innovative graphic design and web development techniques to deliver a stunning result.",
+    "myGoal": "My goal was to completely rebuild a well-known website for designers.",
+    "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "slides": [
+      {
+        "img": "images/image-02-432x228.jpg",
+        "tags": [
+          { "title": "Design", "link": "#" },
+          { "title": "Branding", "link": "#" }
+        ]
+      },
+      {
+        "img": "images/image-04-651x773.jpg",
+        "tags": [
+          { "title": "Design", "link": "#" },
+          { "title": "Branding", "link": "#" },
+          { "title": "Logo", "link": "#" }
+        ]
+      }
+    ],
+    
+    "clientLogo": {
+      "img": "images/logo-01-86x36.png"
+    }
+  }
+]

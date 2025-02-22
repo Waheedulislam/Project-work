@@ -1,0 +1,120 @@
+.newsLetterButton {
+  @apply w-full h-full bg-cream px-[20px];
+  span {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 22px;
+    transition: opacity 0.1s linear;
+    position: relative;
+  }
+
+  span::after,
+  span::before {
+    display: block;
+    content: "";
+    background-color: #538074;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    transform: rotate(0) translateX(0);
+    left: 0;
+    transition: all 0.3s ease;
+    transform-origin: 0 0;
+  }
+
+  span::before {
+    top: 10%;
+  }
+
+  span::after {
+    top: 110%;
+  }
+  &:hover span {
+    opacity: 0.6;
+  }
+}
+
+.newsLetterButton span.active::before {
+  left: 12%;
+  width: 35px;
+  transform: rotate(45deg) translateX(-0.5px);
+}
+
+.newsLetterButton span.active::after {
+  left: 12%;
+  width: 35px;
+  transform: rotate(-45deg) translateX(-2.5px);
+}
+
+.newsLetterFull {
+  @apply flex flex-col items-center fixed top-14 w-full bg-white text-center py-4;
+
+  visibility: hidden;
+  transition: all 0.15s ease-in-out;
+  transform: translateY(20%) scale(0.8);
+  opacity: 0;
+}
+
+.newsLetterFullActive {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.modal {
+  visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background-color: rgba($color: #000000, $alpha: 0.85);
+  pointer-events: none;
+  z-index: 1090;
+
+  &.active {
+    visibility: visible;
+    pointer-events: all;
+    transform: scale(1);
+  }
+}
+
+.modalContent {
+  opacity: 0;
+  transform: scale(0.3);
+  max-width: 855px;
+  width: 100%;
+  transition:
+    transform 0.3s ease-out,
+    opacity 0.5s ease-out;
+  padding: 0 5px;
+}
+
+.modalContent.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 855px;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+
+  & > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1091;
+  }
+}

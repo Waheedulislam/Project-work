@@ -1,0 +1,240 @@
+.intro {
+  @apply relative z-0 !p-[2.5rem_0.9375rem] lg:!p-[8rem_0.9375rem_2.5rem] overflow-hidden xl-1200:!p-[13rem_0.9375rem_0rem];
+}
+
+.intro-inner {
+  max-width: 355px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-social {
+  margin-bottom: -1.875rem;
+  margin-left: -0.9375rem;
+}
+
+.intro-social:empty {
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+.intro-social > * {
+  margin-top: 0;
+  margin-bottom: 1.875rem;
+  margin-left: 0.9375rem;
+}
+
+.intro-social-link {
+  display: inline-block;
+  color: inherit;
+}
+
+.intro-social-link:hover {
+  color: $orange;
+}
+
+.intro-bg-text {
+  position: absolute;
+  bottom: 2%;
+  left: 50%;
+  z-index: -1;
+  font-weight: 900;
+  font-size: 5.875rem;
+  line-height: 1;
+  color: #faf1e8;
+  transform: translateX(-50%);
+
+  @apply bottom-[0%] md:bottom-[2%]
+}
+
+.center-button {
+  position: relative;
+  z-index: 0;
+  color: #fff;
+  background: $nebula;
+  transition: all 0.2s ease-in-out;
+  padding: 1.3125rem 1.9375rem;
+  overflow: hidden;
+}
+
+.center-button::before {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  content: "";
+  background: $orange;
+  transition: all 0.2s ease-in-out;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+}
+
+.center-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.thumbnail-video .thumbnail-icon {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5.75rem;
+  height: 6.25rem;
+  font-size: 2.1875rem;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.thumbnail-boxed .thumbnail-body {
+  position: relative;
+  z-index: 0;
+  padding: 0.9375rem 0.59375rem;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: $orange;
+  overflow: hidden;
+}
+
+.thumbnail-boxed .thumbnail-body::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  content: "";
+  height: 100%;
+  background-color: $nebula;
+  transform: translateY(95%);
+  transition: 0.6s;
+  will-change: transform;
+}
+
+.intro-social-container {
+  @apply col-md-6 col-lg-1 col-xxl-1 flex items-center justify-center pt-[2%] lg-992:pt-[23%];
+}
+
+.thumbnail-1 .thumbnail-media {
+  box-shadow: 30px 60px 50px rgba(17, 18, 53, 0.08);
+}
+
+.thumbnail-1 .thumbnail-body {
+  padding: 1.18125rem 0.9375rem 0rem 1.65625rem;
+}
+@media (max-width: 575.98px) {
+  .owl-carousel-separate .thumbnail-1 .thumbnail-media {
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .thumbnail-1 .thumbnail-body {
+    padding: 1.18125rem 0.9375rem 0rem 2.31875rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .thumbnail-1 .thumbnail-body {
+    padding: 1.6875rem 0.9375rem 0rem 3.3125rem;
+  }
+}
+
+.thumbnail-video .thumbnail-media {
+  position: relative;
+}
+
+.thumbnail-video .thumbnail-media::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2rem;
+  height: 2rem;
+  content: "";
+  background-color: $orange;
+}
+
+@media (min-width: 576px) {
+  .intro-inner {
+    max-width: 100%;
+  }
+
+  .intro-bg-text {
+    font-size: 10.9375rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro .thumbnail-boxed {
+    transform: translateX(-80px);
+  }
+
+  .intro-subtitle {
+    padding-left: 2.6875rem;
+  }
+
+  .intro-bg-text {
+    font-size: 14.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .intro .thumbnail-boxed {
+    max-width: 270px;
+    transform: translateX(-120px);
+  }
+
+  .intro-subtitle {
+    padding-left: 3.7625rem;
+  }
+
+  .intro-social {
+    white-space: nowrap;
+    transform: rotate(90deg) translateX(-50%);
+    margin-left: -3.75rem;
+  }
+
+  .intro-social > * {
+    margin-left: 3.75rem;
+  }
+
+  .intro-bg-text {
+    font-size: 18.9375rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro {
+    padding: 10rem 0rem 0rem;
+  }
+
+  .intro-bg-text {
+    font-size: 25rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .intro {
+    padding: 11.25rem 0rem 0rem;
+  }
+
+  .intro-subtitle {
+    max-width: 400px;
+    padding-left: 5.375rem;
+  }
+
+  .intro-social {
+    margin-left: -5rem;
+  }
+
+  .intro-social > * {
+    margin-left: 5rem;
+  }
+
+  .intro-bg-text {
+    font-size: 31.25rem;
+  }
+}
+

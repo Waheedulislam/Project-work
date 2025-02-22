@@ -1,0 +1,40 @@
+.client-object {
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+}
+
+
+.client-background {
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    .client-background {
+        display: none !important;
+    }
+}
+
+.client-slider::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    content: '';
+    height: 100%;
+    background-color: $nebula;
+    transform: translateY(95%);
+    transition: .6s;
+    will-change: transform;
+}
+
+.client-slider:hover::before {
+    transform: translateY(-100%);
+}
+
+.bg-image {
+    background-position: center center;
+    background-size: cover;
+}

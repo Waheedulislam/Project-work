@@ -1,0 +1,20 @@
+{
+  "social": [
+    { "title": "dribbble", "link": "#", "img": "images/dribbble.png" },
+    { "title": "facebook", "link": "#", "img": "images/facebook.png" },
+    { "title": "instagram", "link": "#", "img": "images/logo-09-98x27.png" }
+  ],
+  "logo": {
+    "src": "/logo-inverse.png"
+  },
+  "phone": {
+    "title": "800.567.1234",
+    "link": "#"
+  },
+  "copyright": "© 2020 Booo. All rights reserved.",
+  "email": {
+    "title": "info@demolink.org",
+    "link": "#"
+  },
+  "address": "121 King Street, Melbourne , Australia"
+}

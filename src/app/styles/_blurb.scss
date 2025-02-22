@@ -1,0 +1,93 @@
+
+.row-bordered {
+    overflow: hidden;
+}
+
+.row-bordered .row {
+    margin: -1px 0 -1px -1px;
+}
+
+.row-bordered .row>[class*="col-"] {
+    border-left: 1px solid $border;
+    border-bottom: 1px solid $border;
+}
+
+
+.blurb {
+    padding: 2.375rem 0.46875rem 3.40625rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.blurb-icon {
+    font-size: 2.0625rem;
+    line-height: 1;
+    transition: all 0.2s ease-in-out;
+}
+
+.blurb-title {
+    transition: all 0.2s ease-in-out;
+}
+
+*+.blurb-title {
+    margin-top: 0.5rem;
+}
+
+.context-dark .blurb-icon {
+    color: rgba(185, 225, 215, 0.2);
+}
+
+.context-dark .blurb:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+      transition: all 0.2s ease-in-out;
+}
+
+.context-dark .blurb:hover .blurb-icon {
+    color: $nebula;
+      transition: all 0.2s ease-in-out;
+}
+
+.context-dark .blurb:hover .blurb-title {
+    color: $orange;
+      transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 992px) {
+    .blurb {
+        padding: 3.325rem 0.65625rem 4.76875rem;
+    }
+
+    .blurb-icon {
+        font-size: 2.8875rem;
+    }
+}
+
+@media (min-width: 1600px) {
+    .blurb {
+        padding: 4.75rem 0.9375rem 6.8125rem;
+    }
+
+    .blurb-icon {
+        font-size: 4.125rem;
+    }
+}
+.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.no-gutters>.col,
+.no-gutters>[class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+.blurb-item-icon{
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+}
+
+.blurb-item-icon::before{
+    @apply text-center pl-[50%]
+}

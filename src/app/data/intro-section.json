@@ -1,0 +1,23 @@
+{
+  "introMe": {
+    "src": "images/person-01-630x866.jpg",
+    "width": "630",
+    "height": "866"
+  },
+  "introWork": {
+    "src": "images/image-12-270x285.jpg",
+    "height": "285",
+    "width": "270",
+    "tags": [{
+      "title": "Design",
+      "link": "#"
+    }],
+    "title": "iStep Co.",
+    "subtitle": "A UX design project I have recently worked on."
+  },
+  "social": {
+    "instagram": "#",
+    "pinterest": "#"
+  },
+  "videoLink": "https://www.youtube.com/embed/3Y_W7hF_J24"
+}
