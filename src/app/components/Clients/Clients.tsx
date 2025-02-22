@@ -9,6 +9,7 @@ import { IoArrowDown } from "react-icons/io5";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useSwiperHandler } from "../../lib/hooks/useSwiperHandler";
+import Image from "next/image";
 
 const Clients = () => {
   const [currentSlide, setCurrentSlide] = useState(1);
@@ -16,7 +17,7 @@ const Clients = () => {
 
   useEffect(() => {
     AOS.init({
-      once: true
+      once: true,
     });
   }, []);
 
@@ -125,9 +126,9 @@ const Clients = () => {
               data-aos="fade-in"
               data-aos-anchor-placement="center-bottom"
             >
-              {myClientsData.logos.map((logo, index) => (
-                <div key={index} className="col-xs-6 col-md-4">
-                  <img
+              {myClientsData?.logos?.map((logo, index) => (
+                <div key={index} className="col-xs-6 col-md-4 ">
+                  <Image
                     src={logo.src}
                     alt={logo.alt}
                     width={logo.width}
