@@ -19,7 +19,7 @@ interface FormErrors {
 const Contact = () => {
   useEffect(() => {
     AOS.init({
-      once: true
+      once: true,
     });
   }, []);
 
@@ -27,14 +27,14 @@ const Contact = () => {
     name: "",
     email: "",
     phone: "",
-    message: ""
+    message: "",
   });
 
   const [errors, setErrors] = useState<FormErrors>({
     name: "",
     email: "",
     phone: "",
-    message: ""
+    message: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -76,7 +76,7 @@ const Contact = () => {
       name: "",
       email: "",
       phone: "",
-      message: ""
+      message: "",
     };
 
     newErrors.name = validateField("name", data.name);
@@ -105,7 +105,7 @@ const Contact = () => {
             name: "",
             email: "",
             phone: "",
-            message: ""
+            message: "",
           });
 
           setTimeout(() => {
@@ -156,6 +156,7 @@ const Contact = () => {
             </h5>
           </div>
         </div>
+
         <form
           onSubmit={submitHandler}
           className="rd-form rd-form-boxed rd-mailform"
