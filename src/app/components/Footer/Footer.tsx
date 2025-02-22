@@ -14,7 +14,7 @@ import messenger from "@/app/data/messenger.json";
 const Footer = () => {
   useEffect(() => {
     AOS.init({
-      once: true
+      once: true,
     });
   }, []);
 
@@ -24,7 +24,7 @@ const Footer = () => {
     handleSubmit,
     isPending,
     isSubmitted,
-    email
+    email,
   } = useEmailForm();
 
   return (

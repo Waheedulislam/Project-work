@@ -121,13 +121,13 @@ const Intro = () => {
               <div className="intro-social h5">
                 <a
                   className="intro-social-link"
-                  href={introData.social.instagram}
+                  href="https://www.instagram.com/"
                 >
                   Instagram
                 </a>
                 <a
                   className="intro-social-link"
-                  href={introData.social.pinterest}
+                  href="https://www.pinterest.com/"
                 >
                   Pinterest
                 </a>
