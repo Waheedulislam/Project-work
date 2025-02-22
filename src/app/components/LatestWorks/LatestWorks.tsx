@@ -122,7 +122,7 @@ const LatestWorks = () => {
                   setCurrentIndex(swiper.activeIndex);
                 }}
                 navigation={false}
-                allowTouchMove={false}
+                allowTouchMove={true}
                 breakpoints={{
                   768: {
                     slidesPerView: 2,
