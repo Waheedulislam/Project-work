@@ -12,8 +12,6 @@ import React, { useEffect, useState } from "react";
 import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useSwiperHandler } from "../../lib/hooks/useSwiperHandler";
-import { fadeIn } from "@/app/lib/animation/variants";
-import { motion } from "framer-motion";
 
 const LatestWorks = () => {
   useEffect(() => {
@@ -134,13 +132,7 @@ const LatestWorks = () => {
               >
                 {works.map((work, index) => (
                   <SwiperSlide className="" key={index}>
-                    <motion.div
-                      variants={fadeIn("up", 0.2)}
-                      initial="hidden"
-                      whileInView="show"
-                      viewport={{ once: false, amount: 0.4 }}
-                      className="latest-set"
-                    >
+                    <div className="latest-set">
                       <div className="thumbnail-media sm:!w-full">
                         <img
                           className="!w-full"
@@ -152,7 +144,7 @@ const LatestWorks = () => {
                             <a
                               key={i}
                               className="design-effect tag"
-                              href={tag.title}
+                              href={tag.link}
                             >
                               {tag.title}
                             </a>
@@ -174,10 +166,60 @@ const LatestWorks = () => {
                           </button>
                         )}
                       </div>
-                    </motion.div>
+                    </div>
                   </SwiperSlide>
                 ))}
               </Swiper>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Modal */}
+      <div
+        className="modal fade"
+        id="modal-project"
+        tabIndex={-1}
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-dialog-centered">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="exampleModalLabel">
+                Project Details
+              </h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body">
+              <div className="project-details">
+                {/* Dynamic content from works data */}
+                {works.map((item) => (
+                  <div
+                    key={item.id}
+                    id={`project-${item.id}`}
+                    className="project-item"
+                  >
+                    <h3>{item.title}</h3>
+                    <img src={item.image} alt={item.title} />
+                    <p>
+                      Description: Here goes the description of the project.
+                    </p>
+                    <div className="tags">
+                      {item.tags.map((tag, i) => (
+                        <a key={i} href={tag.link} className="tag">
+                          {tag.title}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>

@@ -58,8 +58,8 @@ const Footer = () => {
                         className="navbar-switch "
                         data-multi-switch=""
                       ></button>
-                      <div className="navbar-logo">
-                        <a className="navbar-logo-link" href="#">
+                      <div className="navbar-logo mb-8">
+                        <a className="navbar-logo-link " href="#">
                           <img
                             src={footer.logo.src}
                             alt={"logo"}
@@ -72,10 +72,12 @@ const Footer = () => {
                   </div>
                 </div>
               </div>
+
               <form
                 onSubmit={handleSubmit}
                 className="flex flex-col justify-end mt-1 mobile-400:flex-row"
-                data-aos="fade-in-up"
+                data-aos="fade-up"
+                data-aos-duration="2500" // This sets the animation duration to 2 seconds (slow fade)
                 data-aos-anchor-placement="bottom-bottom"
                 data-form-output="newsletter-sample"
                 data-form-type="subscribe"
@@ -101,6 +103,7 @@ const Footer = () => {
                   Subscribe
                 </button>
               </form>
+
               <div
                 className="form-output snackbar snackbar-primary"
                 id="newsletter-sample"
@@ -109,6 +112,7 @@ const Footer = () => {
                 <div
                   className="col-6 col-sm-4 col-xl-6 animated fadeInUp"
                   data-aos="fade-up"
+                  data-aos-duration="2500"
                   data-aos-anchor-placement="bottom-bottom"
                   data-animate=""
                 >
@@ -122,6 +126,7 @@ const Footer = () => {
                 <div
                   className="col-6 col-sm-4 col-xl-6 animated fadeInUp"
                   data-aos="fade-up"
+                  data-aos-duration="2500"
                   data-aos-anchor-placement="bottom-bottom"
                   data-animate=""
                 >
@@ -135,6 +140,7 @@ const Footer = () => {
                 <div
                   className="col-6 col-sm-4 col-xl-6 animated fadeInUp"
                   data-aos="fade-up"
+                  data-aos-duration="2500"
                   data-aos-anchor-placement="bottom-bottom"
                   data-animate=""
                 >
@@ -157,7 +163,7 @@ const Footer = () => {
                 {footer.social.map((s, i) => (
                   <a key={i} className="image-link" href={s.link}>
                     <img
-                      className="image opacity-30 hover:opacity-100 transition-all duration-300 ease-in-out"
+                      className="image opacity-30 hover:opacity-100 transition-all duration-300 ease-in-out "
                       src={s.img}
                       alt={s.title}
                     />

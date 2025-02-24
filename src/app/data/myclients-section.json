@@ -1,60 +1,25 @@
 {
   "clients": [
     {
+      "id": 1,
       "quote": "James spends quite a bit of time getting to know his clients and their projects to be able to add tremendous value to them.",
       "author": "Emma Wilson",
       "role": "Client",
       "img": "images/person-01-67x67.jpg"
     },
     {
+      "id": 2,
       "quote": "James is exceptionally talented and very well-versed in both design and web technologies. I highly recommend him.",
       "author": "John McMillan",
       "role": "Client",
       "img": "images/person-02-67x67.jpg"
     },
     {
+      "id": 3,
       "quote": "James is one of the most talented designers we've had the opportunity to work with. His elegant design execution comes with great precision.",
       "author": "Kate Peters",
       "role": "Client",
       "img": "images/person-03-67x67.jpg"
-    }
-  ],
-  "logos": [
-    {
-      "src": "images/logo-01-86x36.png",
-      "alt": "logo1",
-      "width": 86,
-      "height": 36
-    },
-    {
-      "src": "images/logo-02-187x30.png",
-      "alt": "logo2",
-      "width": 187,
-      "height": 30
-    },
-    {
-      "src": "images/logo-03-130x27.png",
-      "alt": "logo3",
-      "width": 130,
-      "height": 27
-    },
-    {
-      "src": "images/logo-04-123x28.png",
-      "alt": "logo4",
-      "width": 123,
-      "height": 28
-    },
-    {
-      "src": "images/logo-05-84x17.png",
-      "alt": "logo5",
-      "width": 84,
-      "height": 17
-    },
-    {
-      "src": "images/logo-06-104x23.png",
-      "alt": "logo6",
-      "width": 104,
-      "height": 23
     }
   ]
 }

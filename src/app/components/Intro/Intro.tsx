@@ -22,13 +22,7 @@ const Intro = () => {
       <section className="section intro bg-100">
         <div ref={sectionRef} className="intro-inner mt-16 lg:-mt-8 sm:pl-3">
           <div className="row row-30 align-items-center">
-            <motion.div
-              variants={fadeIn("right", 0.2)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.4 }}
-              className=" col-md-4 col-xxl-3 offset-xl-1 offset-xxl-2 flex flex-col items-center justify-center md-custom:items-start"
-            >
+            <div className=" col-md-4 col-xxl-3 offset-xl-1 offset-xxl-2 flex flex-col items-center justify-center md-custom:items-start">
               <h1 className="space-x-2 text-center md:text-start">
                 <span className="font-light md-custom:mr-[.7rem]">Hi!</span>
                 <span
@@ -47,16 +41,10 @@ const Intro = () => {
               <a className="btn max-w-56" data-anchor-link="" href="#contact">
                 Get in touch
               </a>
-            </motion.div>
+            </div>
 
             {/* image-section  */}
-            <motion.div
-              variants={fadeIn("left", 0.2)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.4 }}
-              className="col-sm-6 col-md-5 col-lg-4 col-xxl-4"
-            >
+            <div className="col-sm-6 col-md-5 col-lg-4 col-xxl-4">
               <div className="thumbnail thumbnail-video">
                 <div className="thumbnail-media">
                   <img
@@ -78,15 +66,9 @@ const Intro = () => {
                   </a>
                 </div>
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              variants={fadeIn("left", 0.2)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0.4 }}
-              className="col-sm-5 col-md-3 col-xl-2 mobile:!flex !items-center"
-            >
+            <div className="col-sm-5 col-md-3 col-xl-2 mobile:!flex !items-center">
               <div className="thumbnail thumbnail-boxed">
                 <div className="thumbnail-media">
                   <img
@@ -115,7 +97,7 @@ const Intro = () => {
                   </div>
                 </div>
               </div>
-            </motion.div>
+            </div>
             {/* Social-media-section */}
             <div className="intro-social-container text-md-left !justify-center md-custom:!justify-start xl-1200:!pb-[5rem] 2xl-1600:!pb-[7rem] lg-992:!justify-center">
               <div className="intro-social h5">

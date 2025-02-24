@@ -53,16 +53,16 @@ const Blog = () => {
                   height="239"
                 />
               </a>
-              <div className="post-body mr-2">
+              <div className="post-body">
                 <div className="post-meta">
                   <div className="post-meta-item">
                     <div className="post-date h5">April 25, 2020</div>
                   </div>
                 </div>
-                <div className="post-title h4 ">
+                <div className="post-title h4">
                   <a href={post.link}>{post.title}</a>
                 </div>
-                <div className="post-text lg:mr-4 mr-0">{post.text}</div>
+                <div className="post-text">{post.text}</div>
               </div>
             </div>
           ))}

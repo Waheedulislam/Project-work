@@ -1,6 +1,7 @@
 "use client";
 
 import myClientsData from "@/app/data/myclients-section.json";
+import myClientsLogo from "@/app/data/myclients-section-logo.json";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
@@ -28,7 +29,14 @@ const Clients = () => {
         data-aos="fade-right"
         data-aos-anchor-placement="center-bottom"
       >
-        <img src="images/bg-pattern-1.jpg" alt="background" />
+        <div style={{ width: "100%", height: "100%" }}>
+          <Image
+            layout="fill"
+            objectFit="cover" // or "contain" depending on how you want the image to scale
+            src="images/bg-pattern-1.jpg"
+            alt="background"
+          />
+        </div>
       </div>
       <div className="container">
         <div className="row">
@@ -126,8 +134,8 @@ const Clients = () => {
               data-aos="fade-in"
               data-aos-anchor-placement="center-bottom"
             >
-              {myClientsData?.logos?.map((logo, index) => (
-                <div key={index} className="col-xs-6 col-md-4 ">
+              {myClientsLogo?.logos?.map((logo) => (
+                <div key={logo.id} className="col-xs-6 col-md-4">
                   <Image
                     src={logo.src}
                     alt={logo.alt}

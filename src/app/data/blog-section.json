@@ -1,5 +1,6 @@
 [
   {
+    "id": 1,
     "img": "images/image-08-287x239.jpg",
     "date": "April 25, 2020",
     "title": "Why Are All Sites Optimizing For Smartphones?",
@@ -7,6 +8,7 @@
     "link": "#"
   },
   {
+    "id": 2,
     "img": "images/image-09-287x239.jpg",
     "date": "April 25, 2020",
     "title": "How to Start Promoting Your Own Blog",
@@ -14,6 +16,7 @@
     "link": "#"
   },
   {
+    "id": 3,
     "img": "images/image-10-287x239.jpg",
     "date": "April 25, 2020",
     "title": "25 Steps to Make Sure that Your Website is Pleasant to Use",

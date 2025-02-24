@@ -7,7 +7,7 @@ import about from "@/app/data/about-section.json";
 const AboutUs = () => {
   useEffect(() => {
     AOS.init({
-      once: true
+      once: true,
     });
   }, []);
 
@@ -22,7 +22,7 @@ const AboutUs = () => {
           data-aos="fade-right"
           data-aos-anchor-placement="center-bottom"
           alt=""
-          className="relative z-0 w-[600px]"
+          className="relative z-0 w-[600px] "
         />
       </div>
 
@@ -38,11 +38,11 @@ const AboutUs = () => {
               <div className="relative inline-block">
                 <div className="absolute z-0  top-[-8%] left-[-8%] mobile:top-[-1.5rem] mobile:left-[-1.5rem] xl-1200:-top-24 xl-1200:-left-24 w-[200px] h-[200px] bg-[#FDF7F1]"></div>
                 <img
-                  className="image overflow-hidden relative mobile:p-0 w-[310px] mobile:w-auto"
+                  className="image overflow-hidden relative mobile:p-0 w-[310px] mobile:w-auto lg:-mb-4"
                   src={about.img}
                   alt="author"
                   width="424"
-                  height="491"
+                  height="500"
                 />
               </div>
             </div>
