@@ -158,7 +158,7 @@ const Footer = () => {
             className="row row-20 animated fadeIn flex !items-center !transition-all !duration-300 mobile:!px-0 !px-4 xl-1200:pt-6 pb-2 xl-1200:pb-8"
             data-animate=""
           >
-            <div className="col-md-7 col-xl-6 !transition-all !duration-300 p-1 mobile:!pb-5">
+            <div className="col-md-7 col-xl-6  !transition-all !duration-300 p-1 mobile:!pb-5">
               <div className="group-80x15 leading-[2]">
                 {footer.social.map((s, i) => (
                   <a key={i} className="image-link" href={s.link}>

@@ -210,6 +210,7 @@ const LatestWorks = () => {
                     <p>
                       Description: Here goes the description of the project.
                     </p>
+                    console.log(object)
                     <div className="tags">
                       {item.tags.map((tag, i) => (
                         <a key={i} href={tag.link} className="tag">

@@ -1,5 +1,97 @@
 [
   {
+    "id": 1,
+    "title": "Donut Country",
+    "list": [
+      "Responsive Interface",
+      "Branding",
+      "Responsive Interface",
+      "Logo Design"
+    ],
+    "description1": "This project combines innovative graphic design and web development techniques to deliver a stunning result.",
+    "myGoal": "My goal was to completely rebuild a well-known website for designers.",
+    "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "slides": [
+      {
+        "img": "https://ld-wt73.template-help.com/wt_prod-29297/images/image-12-651x773.jpg",
+        "tags": [
+          {
+            "title": "Design",
+            "link": "#"
+          },
+          {
+            "title": "Branding",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "img": "images/image-04-651x773.jpg",
+        "tags": [
+          {
+            "title": "Design",
+            "link": "#"
+          },
+          {
+            "title": "Branding",
+            "link": "#"
+          },
+          {
+            "title": "Logo",
+            "link": "#"
+          }
+        ]
+      }
+    ],
+    "clientLogo": {
+      "img": "https://ld-wt73.template-help.com/wt_prod-29297/images/logo-02-187x30.png"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Furni",
+    "list": [
+      "Interior Design",
+      "3D Modeling",
+      "Furniture Layout",
+      "Product Customization"
+    ],
+    "description1": "This project involved creating an online platform for custom furniture design.",
+    "myGoal": "My goal was to provide users with the ability to design and order furniture according to their preferences.",
+    "description2": "I collaborated with furniture designers to ensure the platform would meet the needs of the interior design industry.",
+    "slides": [
+      {
+        "img": "https://ld-wt73.template-help.com/wt_prod-29297/images/image-12-651x773.jpg",
+        "tags": [
+          {
+            "title": "Furniture",
+            "link": "#"
+          },
+          {
+            "title": "3D Design",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "img": "images/image-04-651x773.jpg",
+        "tags": [
+          {
+            "title": "Custom",
+            "link": "#"
+          },
+          {
+            "title": "Interior",
+            "link": "#"
+          }
+        ]
+      }
+    ],
+    "clientLogo": {
+      "img": "https://ld-wt73.template-help.com/wt_prod-29297/images/logo-02-187x30.png"
+    }
+  },
+  {
     "id": 3,
     "title": "uDesign",
     "list": [
@@ -16,56 +108,168 @@
       {
         "img": "images/image-12-651x773.jpg",
         "tags": [
-          { "title": "Design", "link": "#" },
-          { "title": "Branding", "link": "#" }
+          {
+            "title": "Design",
+            "link": "#"
+          },
+          {
+            "title": "Branding",
+            "link": "#"
+          }
         ]
       },
       {
         "img": "images/image-04-651x773.jpg",
         "tags": [
-          { "title": "Design", "link": "#" },
-          { "title": "Branding", "link": "#" },
-          { "title": "Logo", "link": "#" }
+          {
+            "title": "Design",
+            "link": "#"
+          },
+          {
+            "title": "Branding",
+            "link": "#"
+          },
+          {
+            "title": "Logo",
+            "link": "#"
+          }
         ]
       }
     ],
     "clientLogo": {
-      "img": "images/logo-02-187x30.png"
+      "img": "https://ld-wt73.template-help.com/wt_prod-29297/images/logo-02-187x30.png"
     }
   },
-
   {
-    "id": 1,
-    "title": "Donut Country",
+    "id": 4,
+    "title": "ProKnife",
     "list": [
-      "Responsive Interface",
+      "Product Showcase",
       "Branding",
-      "Responsive Interface",
-      "Logo Design"
+      "E-Commerce Integration",
+      "Mobile Compatibility"
     ],
-    "description1": "This project combines innovative graphic design and web development techniques to deliver a stunning result.",
-    "myGoal": "My goal was to completely rebuild a well-known website for designers.",
-    "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description1": "This project focuses on creating a modern online store for kitchen knives.",
+    "myGoal": "My goal was to provide an easy and secure way to purchase high-quality knives.",
+    "description2": "The project included integrating an e-commerce platform to allow customers to browse and purchase knives with ease.",
     "slides": [
       {
-        "img": "images/image-02-432x228.jpg",
+        "img": "https://ld-wt73.template-help.com/wt_prod-29297/images/image-12-651x773.jpg",
         "tags": [
-          { "title": "Design", "link": "#" },
-          { "title": "Branding", "link": "#" }
+          {
+            "title": "Product",
+            "link": "#"
+          },
+          {
+            "title": "E-Commerce",
+            "link": "#"
+          }
         ]
       },
       {
         "img": "images/image-04-651x773.jpg",
         "tags": [
-          { "title": "Design", "link": "#" },
-          { "title": "Branding", "link": "#" },
-          { "title": "Logo", "link": "#" }
+          {
+            "title": "Branding",
+            "link": "#"
+          },
+          {
+            "title": "Products",
+            "link": "#"
+          }
         ]
       }
     ],
-    
     "clientLogo": {
-      "img": "images/logo-01-86x36.png"
+      "img": "https://ld-wt73.template-help.com/wt_prod-29297/images/logo-02-187x30.png"
+    }
+  },
+  {
+    "id": 5,
+    "title": "Floral Paradise",
+    "list": [
+      "Floral Design",
+      "Website Redesign",
+      "E-Commerce Integration",
+      "Mobile-Friendly"
+    ],
+    "description1": "This project aimed to create an online store for custom floral arrangements.",
+    "myGoal": "My goal was to create a platform for flower enthusiasts to easily shop for fresh floral arrangements.",
+    "description2": "We focused on making the site easy to navigate and ensuring a seamless shopping experience for all users.",
+    "slides": [
+      {
+        "img": "https://ld-wt73.template-help.com/wt_prod-29297/images/image-12-651x773.jpg",
+        "tags": [
+          {
+            "title": "Flowers",
+            "link": "#"
+          },
+          {
+            "title": "E-Commerce",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "img": "images/image-04-651x773.jpg",
+        "tags": [
+          {
+            "title": "Design",
+            "link": "#"
+          },
+          {
+            "title": "Shop",
+            "link": "#"
+          }
+        ]
+      }
+    ],
+    "clientLogo": {
+      "img": "https://ld-wt73.template-help.com/wt_prod-29297/images/logo-02-187x30.png"
+    }
+  },
+  {
+    "id": 6,
+    "title": "Poultrix",
+    "list": [
+      "Food Delivery",
+      "Subscription Model",
+      "Online Ordering",
+      "User Engagement"
+    ],
+    "description1": "Poultrix is an online platform for ordering fresh poultry products.",
+    "myGoal": "My goal was to develop a seamless food delivery platform for poultry products.",
+    "description2": "The project offers users the ability to order poultry products directly to their doorsteps on a subscription basis.",
+    "slides": [
+      {
+        "img": "https://ld-wt73.template-help.com/wt_prod-29297/images/image-12-651x773.jpg",
+        "tags": [
+          {
+            "title": "Food",
+            "link": "#"
+          },
+          {
+            "title": "Delivery",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "img": "images/image-04-651x773.jpg",
+        "tags": [
+          {
+            "title": "Subscription",
+            "link": "#"
+          },
+          {
+            "title": "Ordering",
+            "link": "#"
+          }
+        ]
+      }
+    ],
+    "clientLogo": {
+      "img": "https://ld-wt73.template-help.com/wt_prod-29297/images/logo-02-187x30.png"
     }
   }
 ]

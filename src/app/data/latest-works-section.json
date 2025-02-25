@@ -4,54 +4,115 @@
     "image": "images/image-02-432x228.jpg",
     "title": "Donut Country",
     "tags": [
-      { "title": "Design", "link": "#" },
-      { "title": "Branding", "link": "#" }
+      {
+        "title": "Design",
+        "link": "#"
+      },
+      {
+        "title": "Branding",
+        "link": "#"
+      }
     ],
-    "titleLink": "#"
+    "titleLink": "#",
+    "description": "A creative project focused on a unique donut-themed design. Developed branding strategies and a modern aesthetic for Donut Country.",
+    "date": "2025-01-15",
+    "client": "Donut World",
+    "projectLink": "https://example.com/donut-country"
   },
   {
     "id": 2,
     "image": "images/image-03-432x238.jpg",
     "title": "Furni",
-    "tags": [{ "title": "Design", "link": "#" }],
-    "titleLink": "#"
+    "tags": [
+      {
+        "title": "Design",
+        "link": "#"
+      }
+    ],
+    "titleLink": "#",
+    "description": "Designed a sleek and modern brand identity for a furniture company, emphasizing minimalistic aesthetics.",
+    "date": "2025-02-01",
+    "client": "FurniCo",
+    "projectLink": "https://example.com/furni"
   },
   {
     "id": 3,
     "image": "images/image-04-432x228.jpg",
     "title": "uDesign",
     "tags": [
-      { "title": "Design", "link": "#" },
-      { "title": "Branding", "link": "#" },
-      { "title": "Logo", "link": "#" }
+      {
+        "title": "Design",
+        "link": "#"
+      },
+      {
+        "title": "Branding",
+        "link": "#"
+      },
+      {
+        "title": "Logo",
+        "link": "#"
+      }
     ],
-    "titleLink": "#"
+    "titleLink": "#",
+    "description": "A complete branding solution for startups, including UI/UX design, logo creation, and marketing assets.",
+    "date": "2025-03-12",
+    "client": "uDesign Labs",
+    "projectLink": "https://example.com/udesign"
   },
   {
     "id": 4,
     "image": "images/image-05-432x238.jpg",
     "title": "ProKnife",
     "tags": [
-      { "title": "Design", "link": "#" },
-      { "title": "Branding", "link": "#" }
+      {
+        "title": "Design",
+        "link": "#"
+      },
+      {
+        "title": "Branding",
+        "link": "#"
+      }
     ],
-    "titleLink": "#"
+    "titleLink": "#",
+    "description": "Crafted a strong and bold visual identity for a premium knife brand, incorporating a sharp and dynamic aesthetic.",
+    "date": "2025-04-05",
+    "client": "ProKnife Inc.",
+    "projectLink": "https://example.com/proknife"
   },
   {
     "id": 5,
     "image": "images/image-06-432x228.jpg",
     "title": "Floral Paradise",
     "tags": [
-      { "title": "Design", "link": "#" },
-      { "title": "Branding", "link": "#" }
+      {
+        "title": "Design",
+        "link": "#"
+      },
+      {
+        "title": "Branding",
+        "link": "#"
+      }
     ],
-    "titleLink": "#"
+    "titleLink": "#",
+    "description": "Developed a vibrant brand identity for a floral company, using nature-inspired visuals and a soft color palette.",
+    "date": "2025-05-10",
+    "client": "Floral Paradise Co.",
+    "projectLink": "https://example.com/floral-paradise"
   },
   {
     "id": 6,
     "image": "images/image-07-432x238.jpg",
     "title": "Poultrix",
-    "tags": [{ "title": "Design", "link": "#" }],
-    "titleLink": "#"
+    "tags": [
+      {
+        "title": "Design",
+        "link": "#"
+      }
+    ],
+    "titleLink": "#",
+    "description": "Designed a fresh and innovative branding concept for a poultry business, incorporating eco-friendly elements.",
+    "date": "2025-06-20",
+    "client": "Poultrix Farms",
+    "projectLink": "https://example.com/poultrix"
   }
 ]
