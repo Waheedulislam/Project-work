@@ -377,7 +377,6 @@
   position: relative;
 }
 
-
 .modal-content::before {
   @apply content-[''] absolute top-0 bottom-0 w-screen bg-[#b9e1d7] h-full;
   @media (min-width: 200px) {
@@ -393,9 +392,8 @@
   }
 }
 
-
-a.tag{
-    transition: all 0.2s ease-in-out;
+a.tag {
+  transition: all 0.2s ease-in-out;
 }
 
 a.tag:hover {
@@ -403,4 +401,3 @@ a.tag:hover {
   background-color: #ee6451;
   border-color: #ee6451;
 }
-

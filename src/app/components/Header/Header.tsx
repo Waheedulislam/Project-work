@@ -22,6 +22,7 @@ const Header: React.FC = () => {
   const buttonRefDots = useRef<HTMLButtonElement>(null);
   const buttonNavRef = useRef<HTMLButtonElement>(null);
   const [activeSection, setActiveSection] = useState("");
+  const [showButton, setShowButton] = useState(false);
 
   const { isShow, handleShow: handleNewPopover } = useOutside(
     false,
@@ -55,6 +56,14 @@ const Header: React.FC = () => {
           }
         }
       });
+
+      // ButtonUp Logic:
+      const firstSection = document.querySelector(
+        navItems[0].path
+      ) as HTMLElement;
+      if (firstSection) {
+        setShowButton(scrollPosition >= firstSection.offsetTop - 200);
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -198,9 +207,7 @@ const Header: React.FC = () => {
           </a>
         </div>
       </header>
-      <ButtonUp
-        isShow={!!(activeSection && navItems[0].path !== activeSection)}
-      />
+      <ButtonUp isShow={showButton} />
     </>
   );
 };

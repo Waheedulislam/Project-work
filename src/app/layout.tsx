@@ -4,11 +4,11 @@ import "./styles/globals.scss";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "a designer portfolio page"
+  description: "a designer portfolio page",
 };
 
 export default function RootLayout({
-  children
+  children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {

@@ -122,7 +122,7 @@ const Clients = () => {
               My Clients
             </h2>
             <h5
-              className="animated fadeIn"
+              className="animated fadeIn text-wrap"
               data-aos="fade-in"
               data-aos-anchor-placement="center-bottom"
             >

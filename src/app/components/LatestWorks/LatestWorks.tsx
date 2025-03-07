@@ -132,12 +132,22 @@ const LatestWorks = () => {
               >
                 {works.map((work, index) => (
                   <SwiperSlide className="" key={index}>
-                    <div className="latest-set">
+                    <div
+                      className={clsx("latest-set", {
+                        "bg-mobile-slide": isMobile576, // Apply background color for mobile
+                      })}
+                      style={{
+                        height: isMobile576 ? "auto" : "400px", // Set dynamic height based on mobile device
+                      }}
+                    >
                       <div className="thumbnail-media sm:!w-full">
                         <img
                           className="!w-full"
                           src={work.image}
                           alt={work.title}
+                          style={{
+                            height: isMobile576 ? "auto" : "100%", // Adjust image height accordingly
+                          }}
                         />
                         <div className="thumbnail-tags ">
                           {work.tags.map((tag, i) => (
