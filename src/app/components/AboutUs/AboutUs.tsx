@@ -54,7 +54,7 @@ const AboutUs = () => {
             data-animate=""
           >
             <h1 className="text-decoration">About me</h1>
-            <h5>{about.title}</h5>
+            <h5 className="px-2">{about.title}</h5>
             <h5>{about.description}</h5>
             <div className="btn-group-1">
               <a className="btn" href={about.sendMessageLink}>

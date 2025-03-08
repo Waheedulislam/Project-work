@@ -127,16 +127,11 @@ const Clients = () => {
               My Clients
             </h2>
             <h5
-              className="animated fadeIn whitespace-normal text-lg leading-relaxed font-inter "
+              className="animated fadeIn whitespace-normal text-lg leading-relaxed font-inter px-1"
               data-aos="fade-in"
               data-aos-anchor-placement="center-bottom"
             >
-              Read the testimonials submitted by my clients
-              <br className="lg:hidden sm:hidden mt-2" />
-              and partners. You
-              <span className="hidden lg:inline sm:block ">
-                <br />
-              </span>
+              Read the testimonials submitted by my clients and partners. You
               can fully trust their opinions on my solutions.
             </h5>
 

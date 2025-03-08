@@ -138,7 +138,7 @@ const LatestWorks = () => {
                         src={work.image}
                         alt={work.title}
                         style={{
-                          height: isMobile576 ? "auto" : "100%", // Adjust image height accordingly
+                          height: isMobile576 ? "auto" : "100%",
                         }}
                       />
                       <div className="thumbnail-tags ">
