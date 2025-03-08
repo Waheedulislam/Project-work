@@ -75,9 +75,9 @@ const Footer = () => {
 
               <form
                 onSubmit={handleSubmit}
-                className="flex flex-col justify-end mt-1 mobile-400:flex-row"
+                className="flex flex-row justify-end mt-1 mobile-400:flex-row"
                 data-aos="fade-up"
-                data-aos-duration="2500" // This sets the animation duration to 2 seconds (slow fade)
+                data-aos-duration="2500"
                 data-aos-anchor-placement="bottom-bottom"
                 data-form-output="newsletter-sample"
                 data-form-type="subscribe"
@@ -97,7 +97,7 @@ const Footer = () => {
                   <span className="form-validation">{emailError}</span>
                 </div>
                 <button
-                  className="btn-secondary font-medium !w-[9rem] mobile-425:!w-[11rem] 2xl-1600:!w-[12.5rem] mt-[.95rem] mx-auto py-[.7rem] mobile-400:mt-0 mobile-400:py-0 px-4 !text-[1rem] lg-992:w-full"
+                  className="btn-secondary font-medium !w-[9rem] mobile-425:!w-[11rem] 2xl-1600:!w-[12.5rem]  mx-auto py-[.7rem] mobile-400:mt-0 mobile-400:py-0 px-2 !text-[1rem] lg-992:w-full "
                   type="submit"
                 >
                   Subscribe
