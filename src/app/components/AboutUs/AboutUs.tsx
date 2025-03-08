@@ -18,7 +18,7 @@ const AboutUs = () => {
     >
       <div className="bg-item overflow-hidden hidden md:flex relative">
         <img
-          src="images/bg-pattern-2 .jpg"
+          src="https://ld-wt73.template-help.com/wt_prod-29297/images/bg-pattern-3.jpg"
           data-aos="fade-right"
           data-aos-anchor-placement="center-bottom"
           alt=""

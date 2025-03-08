@@ -132,7 +132,7 @@ const LatestWorks = () => {
               >
                 {works.map((work, index) => (
                   <SwiperSlide className="" key={index}>
-                    <div className="thumbnail-media sm:!w-full h-auto">
+                    <div className="thumbnail-media sm:!w-full ">
                       <img
                         className="!w-full"
                         src={work.image}
