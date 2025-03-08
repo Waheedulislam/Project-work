@@ -28,15 +28,15 @@ const Clients = () => {
         className="bg-item client-background hidden sm:flex bg-image animated fadeInLeftBig"
         data-aos="fade-right"
         data-aos-anchor-placement="center-bottom"
+        data-aos-duration="1500"
+        style={{ width: "100%", height: "100%" }}
       >
-        <div style={{ width: "100%", height: "100%" }}>
-          <Image
-            layout="fill"
-            objectFit="cover" // or "contain" depending on how you want the image to scale
-            src="images/bg-pattern-1.jpg"
-            alt="background"
-          />
-        </div>
+        <Image
+          layout="fill"
+          objectFit="cover" // or "contain" depending on how you want the image to scale
+          src="images/bg-pattern-1.jpg"
+          alt="background"
+        />
       </div>
       <div className="container">
         <div className="row">
@@ -59,7 +59,12 @@ const Clients = () => {
               >
                 {myClientsData.clients.map((el, index) => (
                   <SwiperSlide className="!flex !items-end" key={index}>
-                    <div className="swiper-slide bg-offWhite relative z-10 client-slider overflow-hidden p-[2rem_1rem_2rem_1rem] lg-992:p-[2.2rem_1.4rem_2rem_1.4rem] 2xl-1600:p-[2.4rem_2rem]">
+                    <div
+                      data-aos="fade-right"
+                      data-aos-duration="1200"
+                      data-aos-anchor-placement="center-bottom"
+                      className="swiper-slide bg-offWhite relative z-10 client-slider overflow-hidden p-[2rem_1rem_2rem_1rem] lg-992:p-[2.2rem_1.4rem_2rem_1.4rem] 2xl-1600:p-[2.4rem_2rem]"
+                    >
                       <blockquote className="quote">
                         <q className="quote-text font-thin italic h4 text-black comment-text lg-992::!pt-3 xl-1200:!p-0">
                           {el.quote}
@@ -122,13 +127,19 @@ const Clients = () => {
               My Clients
             </h2>
             <h5
-              className="animated fadeIn text-wrap"
+              className="animated fadeIn whitespace-normal text-lg leading-relaxed font-inter "
               data-aos="fade-in"
               data-aos-anchor-placement="center-bottom"
             >
-              Read the testimonials submitted by my clients and partners. You
+              Read the testimonials submitted by my clients
+              <br className="lg:hidden sm:hidden mt-2" />
+              and partners. You
+              <span className="hidden lg:inline sm:block ">
+                <br />
+              </span>
               can fully trust their opinions on my solutions.
             </h5>
+
             <div
               className="row row-30 row-xxl-50 row-content-2 align-items-center text-center"
               data-aos="fade-in"

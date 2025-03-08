@@ -132,50 +132,41 @@ const LatestWorks = () => {
               >
                 {works.map((work, index) => (
                   <SwiperSlide className="" key={index}>
-                    <div
-                      className={clsx("latest-set", {
-                        "bg-mobile-slide": isMobile576, // Apply background color for mobile
-                      })}
-                      style={{
-                        height: isMobile576 ? "auto" : "400px", // Set dynamic height based on mobile device
-                      }}
-                    >
-                      <div className="thumbnail-media sm:!w-full">
-                        <img
-                          className="!w-full"
-                          src={work.image}
-                          alt={work.title}
-                          style={{
-                            height: isMobile576 ? "auto" : "100%", // Adjust image height accordingly
-                          }}
-                        />
-                        <div className="thumbnail-tags ">
-                          {work.tags.map((tag, i) => (
-                            <a
-                              key={i}
-                              className="design-effect tag"
-                              href={tag.link}
-                            >
-                              {tag.title}
-                            </a>
-                          ))}
-                        </div>
-                      </div>
-                      <div className="pl-8 pt-4">
-                        <div className="thumbnail-title h4">
-                          <a href={work.titleLink}>{work.title}</a>
-                        </div>
-                        {explore.find((data) => data.id === work.id) && (
-                          <button
-                            onClick={() => openExplore(work.id)}
-                            className="thumbnail-link h5"
-                            data-toggle="modal"
-                            data-target="#modal-project"
+                    <div className="thumbnail-media sm:!w-full h-auto">
+                      <img
+                        className="!w-full"
+                        src={work.image}
+                        alt={work.title}
+                        style={{
+                          height: isMobile576 ? "auto" : "100%", // Adjust image height accordingly
+                        }}
+                      />
+                      <div className="thumbnail-tags ">
+                        {work.tags.map((tag, i) => (
+                          <a
+                            key={i}
+                            className="design-effect tag"
+                            href={tag.link}
                           >
-                            Explore
-                          </button>
-                        )}
+                            {tag.title}
+                          </a>
+                        ))}
                       </div>
+                    </div>
+                    <div className="pl-8 pt-4">
+                      <div className="thumbnail-title h4">
+                        <a href={work.titleLink}>{work.title}</a>
+                      </div>
+                      {explore.find((data) => data.id === work.id) && (
+                        <button
+                          onClick={() => openExplore(work.id)}
+                          className="thumbnail-link h5"
+                          data-toggle="modal"
+                          data-target="#modal-project"
+                        >
+                          Explore
+                        </button>
+                      )}
                     </div>
                   </SwiperSlide>
                 ))}

@@ -97,7 +97,7 @@ const Footer = () => {
                   <span className="form-validation">{emailError}</span>
                 </div>
                 <button
-                  className="btn-secondary font-medium !w-[9rem] mobile-400:!w-[11rem] 2xl-1600:!w-[12.5rem] mt-[.95rem] mx-auto py-[.7rem] mobile-400:mt-0 mobile-400:py-0 px-4 !text-[1rem] lg-992:w-full"
+                  className="btn-secondary font-medium !w-[9rem] mobile-425:!w-[11rem] 2xl-1600:!w-[12.5rem] mt-[.95rem] mx-auto py-[.7rem] mobile-400:mt-0 mobile-400:py-0 px-4 !text-[1rem] lg-992:w-full"
                   type="submit"
                 >
                   Subscribe

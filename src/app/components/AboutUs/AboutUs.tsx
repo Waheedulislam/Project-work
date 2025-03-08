@@ -18,7 +18,7 @@ const AboutUs = () => {
     >
       <div className="bg-item overflow-hidden hidden md:flex relative">
         <img
-          src="images/bg-pattern-1.jpg"
+          src="images/bg-pattern-2 .jpg"
           data-aos="fade-right"
           data-aos-anchor-placement="center-bottom"
           alt=""
