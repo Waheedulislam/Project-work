@@ -43,7 +43,7 @@ const LatestWorks = () => {
       } else if (isMobile576) {
         setMaxScroll(works.length - 1);
       } else {
-        setMaxScroll(works.length - 3);
+        setMaxScroll(works.length - 5);
       }
     }
   }, [isMobile768, isMobile576]);
@@ -131,44 +131,69 @@ const LatestWorks = () => {
                 }}
               >
                 {works.map((work, index) => (
-                  <SwiperSlide className="" key={index}>
-                    <div className="thumbnail-media sm:!w-full ">
-                      <img
-                        className="!w-full"
-                        src={work.image}
-                        alt={work.title}
-                        style={{
-                          height: isMobile576 ? "auto" : "100%",
-                        }}
-                      />
-                      <div className="thumbnail-tags ">
-                        {work.tags.map((tag, i) => (
-                          <a
-                            key={i}
-                            className="design-effect tag"
-                            href={tag.link}
-                          >
-                            {tag.title}
-                          </a>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="pl-8 pt-4">
-                      <div className="thumbnail-title h4">
-                        <a href={work.titleLink}>{work.title}</a>
-                      </div>
-                      {explore.find((data) => data.id === work.id) && (
-                        <button
-                          onClick={() => openExplore(work.id)}
-                          className="thumbnail-link h5"
-                          data-toggle="modal"
-                          data-target="#modal-project"
+                  <Swiper
+                    ref={swiperRef}
+                    spaceBetween={isDesktop1600 ? 45 : 30}
+                    slidesPerView={isMobile576 ? 1 : isMobile768 ? 2 : 3}
+                    onSlideChange={(swiper) => {
+                      setCurrentIndex(swiper.activeIndex);
+                    }}
+                    breakpoints={{
+                      768: {
+                        slidesPerView: 2,
+                      },
+                      0: {
+                        slidesPerView: 1,
+                      },
+                    }}
+                  >
+                    {works.map((work, index) => (
+                      <SwiperSlide
+                        key={index}
+                        className={clsx({
+                          "active-slide": currentIndex === index,
+                        })}
+                      >
+                        <div
+                          className={clsx("thumbnail-media sm:!w-full", {
+                            "h-[240px] md:h-[350px] lg:h-auto":
+                              currentIndex !== index,
+                            "h-auto": currentIndex === index,
+                          })}
                         >
-                          Explore
-                        </button>
-                      )}
-                    </div>
-                  </SwiperSlide>
+                          <img
+                            className="!w-full object-cover"
+                            src={work.image}
+                            alt={work.title}
+                          />
+                          <div className="thumbnail-tags">
+                            {work.tags.map((tag, i) => (
+                              <a
+                                key={i}
+                                className="design-effect tag"
+                                href={tag.link}
+                              >
+                                {tag.title}
+                              </a>
+                            ))}
+                          </div>
+                        </div>
+                        <div className="pl-8 pt-4">
+                          <div className="thumbnail-title h4">
+                            <a href={work.titleLink}>{work.title}</a>
+                          </div>
+                          {explore.find((data) => data.id === work.id) && (
+                            <button
+                              onClick={() => openExplore(work.id)}
+                              className="thumbnail-link h5"
+                            >
+                              Explore
+                            </button>
+                          )}
+                        </div>
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
                 ))}
               </Swiper>
             </div>

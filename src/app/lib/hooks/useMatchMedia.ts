@@ -5,38 +5,34 @@ const queries = [
   "(min-width: 577px) and (max-width: 767px)",
   "(min-width: 768px) and (max-width: 992px)",
   "(min-width: 993px)",
-  "(min-width: 1600px)"
+  "(min-width: 1600px)",
 ];
 
 export const useMatchMedia = (): { [key: string]: boolean } => {
   const [values, setValues] = useState<boolean[]>([]);
 
   useLayoutEffect(() => {
-    if (typeof window === undefined) return;
-    const mediaQueryLists = queries.map((query) => matchMedia(query));
+    if (typeof window === "undefined") return;
+
+    const mediaQueryLists = queries.map((query) => window.matchMedia(query));
     const getValues = () => mediaQueryLists.map((mql) => mql.matches);
-    const handler = () => setValues(getValues);
+    const handler = () => setValues(getValues());
 
     mediaQueryLists.forEach((mql) => mql.addEventListener("change", handler));
     setValues(getValues());
 
-    return () =>
+    return () => {
       mediaQueryLists.forEach((mql) =>
         mql.removeEventListener("change", handler)
       );
+    };
   }, []);
 
-  return [
-    "isMobile576",
-    "isMobile768",
-    "isTablet",
-    "isDesktop",
-    "isDesktop1600"
-  ].reduce(
-    (acc, scr, i) => ({
-      ...acc,
-      [scr]: values[i]
-    }),
-    {}
-  );
+  return {
+    isMobile576: values[0] || false,
+    isMobile768: values[1] || false,
+    isTablet: values[2] || false,
+    isDesktop: values[3] || false,
+    isDesktop1600: values[4] || false,
+  };
 };

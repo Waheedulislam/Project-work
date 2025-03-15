@@ -62,7 +62,7 @@ const Header: React.FC = () => {
         navItems[0].path
       ) as HTMLElement;
       if (firstSection) {
-        setShowButton(scrollPosition >= firstSection.offsetTop - 200);
+        setShowButton(scrollPosition >= firstSection.offsetTop - 195);
       }
     };
 
@@ -207,7 +207,7 @@ const Header: React.FC = () => {
           </a>
         </div>
       </header>
-      <ButtonUp isShow={showButton} />
+      <ButtonUp className="-mb-8" isShow={showButton} />
     </>
   );
 };

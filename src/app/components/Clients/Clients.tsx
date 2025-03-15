@@ -29,7 +29,7 @@ const Clients = () => {
         data-aos="fade-right"
         data-aos-anchor-placement="center-bottom"
         data-aos-duration="1500"
-        style={{ width: "100%", height: "100%" }}
+        style={{ height: "100%" }}
       >
         <Image
           layout="fill"
