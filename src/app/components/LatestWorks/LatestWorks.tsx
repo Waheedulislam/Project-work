@@ -201,7 +201,7 @@ const LatestWorks = () => {
         </div>
       </div>
 
-      {/* Modal */}
+      {/* Modal-Section*/}
       <div
         className="modal fade"
         id="modal-project"
